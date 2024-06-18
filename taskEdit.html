@@ -28,17 +28,47 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">                    
                     <!-- Borders need to exist and be bg color to preserve spacing on hover state -->
-                    <a class="mx-1 my-2 nav-link active col-md-2 text-center bg-light" style="border-top: 2px solid black; border-bottom: 2px solid black;" href="">HOME</a>
+                    <a class="mx-1 my-2 nav-link active col-md-2 text-center" style="border-top: 2px solid white; border-bottom: 2px solid white;" href="">HOME</a>
                     <a class="mx-1 my-2 nav-link col-md-2 text-center text-secondary" style="border-top: 2px solid white; border-bottom: 2px solid white;" href="dashboard.html">DASHBOARD</a>
                     <!-- "&#x2011;" represents a non-break hypen, to preserve inline-text -->
                     <a class="mx-1 my-2 nav-link col-md-2 text-center text-secondary" style="border-top: 2px solid white; border-bottom: 2px solid white;" href="taskCreate.html">TASK&#x2011;CREATE</a>
-                    <a class="mx-1 my-2 nav-link col-md-2 text-center text-secondary" style="border-top: 2px solid white; border-bottom: 2px solid white;" href="taskEdit.html">TASK&#x2011;EDIT</a>
+                    <a class="mx-1 my-2 nav-link col-md-2 text-center text-secondary bg-light" style="border-top: 2px solid black; border-bottom: 2px solid black;" href="taskEdit.html">TASK&#x2011;EDIT</a>
                 </div>
             </nav>
         </header>
         <hr>
-        <div class="container">
-            
+        <div class="container-fluid row justify-content-center">
+            <div class="col col-md-8" style="max-width: 600px;">                
+                <h2>Edit Task</h2>
+                <form action="">
+                    <div class="m-3">
+                        <label for="task-name" class="form-label">Task Name:</label>
+                        <input type="text" class="form-control" id="task-name" placeholder="Prepopulated Task Name" aria-describedby="Task Name input">
+                    </div>
+                    <div class="m-3">
+                        <label for="tags" class="form-label">Tags:</label>
+                        <input type="text" class="form-control" id="tags" placeholder="Tag1, Tag2, Tag3" aria-describedby="Tag input">
+                    </div>
+                    <div class="m-3">
+                        <label for="start-date" class="form-label">Start Date:</label>
+                        <input type="date" class="form-control" id="start-date" aria-describedby="Start Date input">
+                        <label for="end-date" class="form-label">End Date:</label>
+                        <input type="date" class="form-control" id="end-date" aria-describedby="End Date input">
+                    </div>
+                    <div class="m-3">
+                        <label for="description" class="form-label">Description:</label>
+                        <textarea class="form-control" id="description" style="height: 6rem;" aria-describedby="Description input">Prepopulated Description</textarea>
+                    </div>
+                    <div class="m-3">
+                        <label for="upload" class="form-label">Images:</label>
+                        <input type="file" class="form-control" id="upload" multiple>
+                    </div>
+                    <div class="m-4 text-end">
+                        <button type="button" class="btn btn-danger" style="width: 140px; height: 50px;">Delete</button>
+                        <button type="button" class="btn btn-outline-success" style="width: 140px; height: 50px;">Save</button>
+                    </div>
+                </form>
+            </div>
         </div>
         <footer>
             
