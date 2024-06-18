@@ -22,17 +22,29 @@
             </div>
         </header>
         <hr>
-        <div class="container">
-            <h2>Login</h2>
-            <form action="">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" id="username" aria-describedby="Username input">
-                <label for="password">Password</label>
-                <input type="text" class="form-control" id="password" aria-describedby="Password input">
-                <button type="submit" class="btn btn-primary">LOGIN</button>
-                <a class="text-tertiary" href="">Forgot Passord?</a>
-                <a class="text-tertiary" href="register.html">Need to Register?</a>
-            </form>
+        <div class="container-fluid row justify-content-center">
+            <div class="col col-md-8" style="max-width: 600px;">                
+                <h2>Login</h2>
+                <form action="">
+                    <div class="m-3">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" aria-describedby="Username input">
+                    </div>
+                    <div class="m-3">
+                        <label for="password">Password</label>
+                        <input type="text" class="form-control" id="password" aria-describedby="Password input">
+                    </div>
+                    <div class="m-3 text-center">
+                        <a href="login.html"><button type="button" class="btn btn-primary" style="width: 120px;">LOGIN</button></a>
+                    </div>
+                    <div class="m-3 text-center">
+                        <a class="text-secondary" href="">Forgot Passord?</a>
+                    </div>
+                    <div class="m-3 text-center">
+                        <a class="text-secondary" href="register.html">Need to Register?</a>
+                    </div>
+                </form>
+            </div>
         </div>
         <footer>
 
